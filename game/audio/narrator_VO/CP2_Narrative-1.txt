@@ -1,0 +1,422 @@
+let S = "Sen Sei"
+
+S: Scientists have two ways of approaching reality. /1
+
+Exodus Academy. The year 6069. The sophomore class of sector 420. /1 (Narrator1)
+
+S: Does anyone care to identify the two scientific approaches in tackling reality? /2
+
+load asset_classical_vs_model-dependent
+
+label question_a10:
+	> Classical and Model-Dependent
+
+		S: That's correct!   /a10_1
+	> Objective and Subjective
+
+		S: This isn't journalism. /a10_2
+
+	> Empirical and Rationalist
+
+		S: Perhaps if you're in a philosophy course. /a10_3
+
+	> Deterministic and Probabilistic
+
+		S: Are you taking a math course? /a10_4
+
+end choice_a1
+
+load sen_sei smiling
+
+S: Today, we'll be discussing classical and model-dependent realism. /3
+
+Classical and model-dependent realism? /2 (Narrator2)
+
+S: That's right. Classical realism claims that there's an objective reality independent of our observations and theories./4
+
+That must mean that there's a singular truth. A true description of reality. (Narrator3)
+
+S: In classical realism, we scientists craft theories to accurately describe the truth of reality. /5
+
+Sen Sei paces around the board.(Narrator4)
+
+S: The second approach is model-dependent realism. What does that mean? /6
+
+It means that reality depends on multiple models? (Narrator5)
+
+S: Well, in model-dependent realism, our grasp of reality is limited by our models and theories. Reality is understood through various models. These models may offer differing descriptions of reality. A single theory may not capture what reality is. It's quite a philosophical approach to science.  /7
+ 
+load sen_sei neutral
+
+Sen Sei stops and takes out a tablet. (Narrator6)
+
+S: Now it's time for a fun activity. You were placed into groups, right? Are you ready for a group quiz? /8
+
+An innocent sentence flashes on the board.(Narrator7)
+
+S: You are to write your answers on a piece of paper. Once the timer reaches zero, your group will show us your answer. /9
+
+Are you ready? (Narrator8)
+
+load asset_board
+
+Question: Model-dependent realism asserts that theories cannot capture the truth of reality.
+
+start event_timer
+
+while event_timer not end:
+
+label quiz1_q1:
+	> True
+		pass
+	> False
+		pass
+	> It depends...
+		pass
+
+if event_timer is end:
+	end quiz1_q1
+else:
+	goto quiz1_q1
+
+S: The correct answer is False. In model-dependent realism, theories may capture the truth of reality, but only in their respective domains. For instance, in model-dependent realism, Newtonian physics accurately describes motion under gravity in everyday scenarios, while Einstein's general relativity offers a more precise description in extreme conditions like near black holes. /10
+
+Question: Classical realism seeks to discover the existence or non-existence of ghosts.
+
+start event_timer
+
+while event_timer not end:
+
+label quiz1_q2:
+	> True
+		pass
+	> False
+		pass
+	
+if event_timer is end:
+	end quiz1_q2
+else:
+	goto quiz1_q2
+
+S: The correct answer is True. Classical realism seeks to understand the existence or non-existence of phenomena based on an objective reality independent of human perception. In the case of ghosts, classical realists would approach the question by investigating empirical evidence and logical reasoning to determine whether such entities exist within the framework of objective reality. /11
+
+Question: In model-dependent realism, which came first: reality or the model?
+
+start event_timer
+
+while event_timer not end:
+
+label quiz1_q3:
+	> Reality
+		pass
+	> Model
+		pass
+	> They came to be at the same time.
+		pass
+
+if event_timer is end:
+	end quiz1_q3
+else:
+	goto quiz1_q3
+
+S: The model comes first. In model-dependent realism, our reality is shaped by the conceptual models or theories we create to interpret our observations and experiences. These models serve as frameworks through which we perceive and make sense of reality, implying that the model precedes our understanding of what is real and what is not. /12
+
+Question: Model-dependent realism asserts that there exists no truth in reality. On the other hand, classical realism asserts that there exists a truth behind reality.
+
+start event_timer
+
+while event_timer not end:
+
+label quiz1_q3:
+	> True
+		pass
+	> False
+		pass
+	> It depends...
+		pass
+
+if event_timer is end:
+	end quiz1_q4
+else:
+	goto quiz1_q4
+
+S: The correct answer is true. In model-dependent realism, truth may be relative and context-dependent, influenced by the conceptual models or theories we use to interpret reality. However, within each model, there exists a notion of truth that corresponds to the accuracy of that model in describing and predicting phenomena within its domain. /13
+
+Question: In model-dependent realism, truth is an absolute concept.
+
+start event_timer
+
+while event_timer not end:
+
+label quiz1_q5:
+	> True
+        	pass
+	> False
+        	pass
+	> Truth doesn't exist.
+		pass
+	> It depends...
+        	pass
+
+if event_timer is end:
+    end quiz1_q5
+else:
+    goto quiz1_q5
+
+S: It depends. As in, it depends on the context and the framework of the model. In model-dependent realism, truth is not always absolute. Instead, it depends on the context and the framework within which it is interpreted. While some models may provide a more absolute conception of truth within their specific domain, others may allow for more relative interpretations. Therefore, whether truth is absolute or relative in model-dependent realism varies based on the particular model being considered and the context in which it is applied. /14
+
+Counting the scores... Not too shabby. (Narrator9)
+
+S:  I see that some of you aren't paying attention. From this point forward, hold on to your paper. I will be asking questions that will be answered as a group, timed, and graded accordingly. Let's move on to the story of a very interesting man and how he determined that the universe is expanding. /15
+
+load edwin_hubble
+
+Edwin Hubble. A 20th century American scientist who played a crucial role in establishing extragalctic astronomy and observational cosmology. (Narrator10)
+
+load sen_sei smiling
+
+S: Edwin Hubble was a pioneer of the stars. He fed his curiosity through science fiction novels. /16
+
+How strange that his fiction of yesterday is the reality of tomorrow. (Narrator11)
+
+load sen_sei neutral
+
+S: In the twentieth century, ages ago, Edwin Hubble set his sights on the heavens. He used the 100-inch Hooker Telescope, the world’s largest at the time, to observe faint, fuzzy, cloud-like patches of light in the cosmos. What are these patches of light called? /17
+
+start event_timer
+
+while event_timer not end:
+
+label question_a11:
+	> Stars
+        	pass
+	> Supernovas
+        	pass
+	> Galaxies
+		pass
+	> Nebula
+		pass
+	> Quasars.
+		pass
+end question_a11
+
+if event_timer is end:
+    end question_a11
+else:
+    goto question_a11
+
+S: These patches of light were nebula. Nebulae. Up until the early 20th century, our perception of the cosmos fell within the boundaries of the Milky Way. There were speculations of other galaxies. However, it wasn't until Hubble turned his telescope on Andromeda that our perception would change. /18
+
+load asset_andromeda
+
+The Andromeda galaxy. Our nearest galactical neighbor. (Narrator12)
+
+S: Back then, Andromeda was believed to be a nebula. Hubble studied the light emitted from Andromeda and concluded that Andromeda was a galaxy as well. He used this technique to discover other galaxies. /19
+
+The Doppler Effect applied to light, aptly named redshift. Light from a distance appears displaced towards the red end of the spectrum. (Narrator13)
+
+S: The redshift of light from distant galaxies indicates that they're moving away from us. The greater the redshift, the faster the galaxies are moving away. This led to the conception of Hubble's Law. Can anyone guess what Hubble's Law states? /20
+
+start event_timer
+
+while event_timer not end:
+
+label question_a12:
+	> The size of a galaxy is directly proportional to its distance from us.
+		pass
+	> The brightness of a galaxy is directly proportional to its distance from us.
+		pass
+    	> The age of a galaxy is directly proportional to its distance from us.
+		pass
+	> The velocity of a galaxy is directly proportional to its distance from us.
+		pass
+end question_a12
+
+if event_timer is end:
+    end question_a12
+else:
+    goto question_a12
+
+load sen_sei smiling
+
+S: Hubble's Law states that the velocity of a galaxy is directly proportional to its distance from us. This observation provided compelling evidence for the expansion of the universe. Hubble's Law also implies that the universe expands uniformly across all directions. /21
+
+A single innocuous question appears on the board.(Narrator14)
+
+Question: Does Edwin Hubble's study of the cosmos align with model-dependent realism or classical realism?
+
+load asset_board
+
+start event_timer
+
+while event_timer not end:
+
+label question_a13:
+	> Model-dependent realism.
+		pass
+	> Classical realism.
+		pass
+    	> Neither, Edwin Hubble's study was aligned with subjectivism.
+		pass
+	> It was aligned with both.
+		pass
+	> None of the above.
+		pass
+end question_a12
+
+if event_timer is end:
+    end question_a13
+else:
+    goto question_a13
+
+S: The answer is classical realism. Edwin Hubble's study of the cosmos aligns more closely with classical realism. His work was grounded in empirical observation and aimed to uncover an objective truth about the universe, consistent with the principles of classical realism. Hubble's observations, such as the discovery of the expanding universe and the formulation of Hubble's Law, contributed to our understanding of the cosmos as an objective reality governed by natural laws. /22
+ 
+load sen_sei neutral
+
+S: This leads us to our next topic of discussion. How did the universe come about, anyway? /23
+
+The Big Bang. That's something that everyone knows.(Narrator15)
+
+load asset_bigbgang
+
+S: About 14 billions years ago, the Big Bang occured. Despite the name, the Big Bang wasn't a violent explosion. Instead, it was the rapid expansion of a very hot and very dense universe, filled with quarks, gluons, and other elementary particles. /24
+
+So it didn't explode like a bomb. (Narrator16)
+
+S: As the universe expanded and cooled, quarks merged together to form protons and neutrons, which then combined to form atomic nuclei, such as hydrogen and helium. This occured about a hundred seconds after the Big Bang. What do you think is the name of this phenomena? /25
+
+start event_timer
+
+while event_timer not end:
+
+label question_a13:
+	> Big Bang Fusion.
+		pass
+	> Primordial Genesis
+		pass
+	> Big Bang Nucleation.
+		pass
+    	> Stellar Nucleosynthesis.
+		pass
+	> Big Bang Nucleosynthesis.
+		pass
+	> None of the above.
+		pass
+end question_a13
+
+if event_timer is end:
+    end question_a13
+else:
+    goto question_a13
+
+S: Hmmm. This phenomena is called Big Bang Nucleosynthesis, during which light elements like hydrogen and helium were formed from the fusion of protons and neutrons in the early universe. /26
+
+The early universe, the primordial soup, from which our universe came to be. (Narrator17)
+
+S: The universe contineud to expand and cool, and electrons combined with atomic nuclei to form neutral atoms, 380,000 years after the Big Bang. This process was called... /27
+
+start event_timer
+
+while event_timer not end:
+
+label question_a14:
+	> Nucleosynthesis
+		pass
+	> Genesis
+		pass
+	> Atomization
+		pass
+    	> Recombination
+		pass
+	> Coalescense
+		pass
+	> None of the above
+		pass
+end question_a14
+
+if event_timer is end:
+    end question_a14
+else:
+    goto question_a14
+
+load sen_sei neutral
+
+S: It's called recombination. After neutral atoms were formed through recombination, the universe still continued to expand and cool. Stars and galaxies formed from the graviational colapse of clouds of dust and gas. /28
+
+And then came our planets.
+
+S: Where do you think did the later, life-supporting elements such as carbon, nitrogen, and oxygen originate from? /29
+
+start event_timer
+
+while event_timer not end:
+
+label question_a15:
+	> Stars
+		pass
+	> Suns
+		pass
+	> Planetary Cores
+		pass
+    	> Dwarf Planets
+		pass
+	> Galaxies
+		pass
+	> Dead Planets
+		pass
+end question_a15
+
+if event_timer is end:
+    end question_a15
+else:
+    goto question_a15
+
+S: Stars manufactured these elements. Life-supporting elements such as carbon, nitrogen, and oxygen primarily originate from the nuclear fusion processes that occur within stars. During the later stages of stellar evolution, massive stars undergo nucleosynthesis, where heavier elements are formed through fusion reactions in their cores. When these stars eventually explode in supernova events, they release these elements into space, enriching the interstellar medium with the building blocks of life. Subsequently, these elements are incorporated into new generations of stars, planets, and ultimately, life forms. /30
+
+Did humans come from space? (Narrator18)
+
+load sen_sei smiling
+
+S: Now, we have our last topic for the day. We'll be tracing the evolution of a high-mass star. /31
+
+load asset_star_one
+
+S: A high-mass star starts its life as a main sequence star, burning hydrogen into helium in its core. You may think of stars as a nuclear powerplant, where nuclear fusion reigns supreme. /32
+
+load asset_star_two
+
+S: As the star exhausts its hydrogen fuel, it expands and becomes a red supergiant. /33
+
+load asset_star_three
+
+S: The core of the star contracts and heats up, and it starts burning helium into carbon and oxygen. /34
+
+load asset_star_four
+
+S: The outer layers of the star expand and cool, and the star becomes larger and brighter. /35
+
+load asset_star_five
+
+S: The core of the star continues to contract and heat up, and it starts burning heavier elements, such as carbon, oxygen, and so on. /36
+
+load asset_star_six
+
+S: Eventually, the core of the star becomes so hot and dense that it forms a degenerate iron core. /37
+
+load asset_star_seven
+
+S: The iron core is unable to sustain nuclear fusion, and it collapses under its own gravity, leading to a supernova explosion. /38
+
+load asset_star_eight
+
+S: The supernova explosion scatters the outer layers of the star into space, and it forms a neutron star or a black hole, depending on the mass of the core. /39
+
+load sen_sei neutral
+
+S: I hope you learned something from today's discussion. /40
+
+load sen_sei smiling
+
+S: Oh, and for the group that got the most points, please claim your reward up front. /41
+
+load asset_end
