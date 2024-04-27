@@ -41,7 +41,7 @@ label start:
 
     play sound "audio/narrator_VO/narrator1.mp3"
 
-    "Exodus Academy. The year 6069. The sophomore class of sector 420."
+    N "Exodus Academy. The year 6069. The sophomore class of sector 420."
 
     scene asset_board with dissolve
     
@@ -54,8 +54,8 @@ label start:
 
     scene asset_board
     
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'topic_1'
 
     show screen countdown
@@ -179,8 +179,8 @@ label topic_1:
 
     scene asset_board with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz1_q1'
     show screen countdown
 
@@ -218,8 +218,8 @@ label quiz1_q1:
 
     scene asset_board with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz1_q2'
     show screen countdown
 
@@ -249,8 +249,8 @@ label quiz1_q2:
 
     scene asset_board with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz1_q3'
     show screen countdown
 
@@ -284,8 +284,8 @@ label quiz1_q3:
 
     scene asset_board with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz1_q4'
     show screen countdown
 
@@ -321,8 +321,8 @@ label quiz1_q4:
 
     scene asset_board with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz1_q5'
     show screen countdown
 
@@ -390,8 +390,8 @@ label topic_2:
 
     scene 33 with dissolve
     
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz2_q1'
     show screen countdown
 
@@ -455,8 +455,8 @@ label quiz2_q1:
 
     scene 33 with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz2_q2'
     show screen countdown
 
@@ -502,8 +502,8 @@ label quiz2_q2:
 
     scene 33 with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz2_q3'
     show screen countdown
 
@@ -569,8 +569,8 @@ label topic_3:
     
     scene 34 with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz2_q4'
     show screen countdown
 
@@ -612,8 +612,8 @@ label quiz2_q4:
 
     scene 34 with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz2_q5'
     show screen countdown
 
@@ -660,8 +660,8 @@ label quiz2_q5:
     
     scene 34 with dissolve
 
-    $ time = 5
-    $ timer_range = 5
+    $ time = 10
+    $ timer_range = 10
     $ timer_jump = 'quiz2_q6'
 
     show screen countdown
