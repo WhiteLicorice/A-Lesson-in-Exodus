@@ -18,7 +18,7 @@ define config.name = _("A Lesson in Exodus")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -30,6 +30,16 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Created by:
+Blesse Rachelle Borromeo,
+Jv Renz Cimafranca,
+Jandresa Elivera,
+Kyle Enorio,
+Jewynah Mae Huele Jaronay,
+Rene Andre Bedonia Jocsing,
+Myrtlle Gem Oraño,
+Rheymart Tugado,
+
 """)
 
 
@@ -63,7 +73,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = "main-menu-theme.ogg"
-
+define config.main_menu_music = "audio/bg-music_menu.mp3"
 
 ## Transitions #################################################################
 ##
