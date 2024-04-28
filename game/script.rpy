@@ -3,9 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define S = Character("Sen Sei")
-define St = Character("Student")
-define N = Character("Narrator")
+define S = Character("Sen Sei", color="#F8F8FF")
+define St = Character("Student", color="#F8F8FF")
+define N = Character("Narrator", color="#F8F8FF")
+define Q = Character("Question", color="#F8F8FF")
 
 init:
     $ timer_range = 0
@@ -174,7 +175,7 @@ label topic_1:
 
 
     play sound "audio/Question_VO/Question1.mp3"
-    S "Question 1: Model-dependent realism asserts that theories cannot capture the truth of reality."
+    Q "Question 1: Model-dependent realism asserts that theories cannot capture the truth of reality."
     stop sound
 
     scene asset_board with dissolve
@@ -213,7 +214,7 @@ label quiz1_q1:
     scene 4 with dissolve
 
     play sound "audio/Question_VO/Question2.mp3"
-    S "Question 2: Classical realism seeks to discover the existence or non-existence of ghosts."
+    Q "Question 2: Classical realism seeks to discover the existence or non-existence of ghosts."
     stop sound
 
     scene asset_board with dissolve
@@ -244,7 +245,7 @@ label quiz1_q2:
     
     scene 4 with dissolve
     play sound "audio/Question_VO/Question3.mp3"
-    S "Question 3: In model-dependent realism, which came first: reality or the model?"
+    Q "Question 3: In model-dependent realism, which came first: reality or the model?"
     stop sound
 
     scene asset_board with dissolve
@@ -270,7 +271,7 @@ label quiz1_q2:
 label quiz1_q3:
     scene 7 with dissolve
     play sound "<from 0 to 13>audio/Sensei_VO/sensei_12.mp3"
-    S "The correct answer is that the model comes first. In model-dependent realism, our reality is shaped by the conceptual models or theories we create to interpret our observations and experiences. "
+    S "The model comes first. In model-dependent realism, our reality is shaped by the conceptual models or theories we create to interpret our observations and experiences. "
     stop sound
 
     play sound "<from 13 to 25.5>audio/Sensei_VO/sensei_12.mp3"
@@ -279,7 +280,7 @@ label quiz1_q3:
 
     scene 4 with dissolve
     play sound "audio/Question_VO/Question4.mp3"
-    S "Question 4: Model-dependent realism asserts that theories cannot capture the truth of reality. Classical realism asserts that there exists a truth behind reality."
+    Q "Question 4: Model-dependent realism asserts that theories cannot capture the truth of reality. Classical realism asserts that there exists a truth behind reality."
     stop sound
 
     scene asset_board with dissolve
@@ -316,7 +317,7 @@ label quiz1_q4:
 
     scene 4 with dissolve
     play sound "audio/Question_VO/Question5.mp3"
-    S "Question 5: In model-dependent realism, truth is an absolute concept."
+    Q "Question 5: In model-dependent realism, truth is an absolute concept."
     stop sound
 
     scene asset_board with dissolve
@@ -437,7 +438,7 @@ label quiz2_q1:
         xzoom 1.7 yzoom 1.7
         align((1.4, 0.6))
     play sound "audio/narrator_VO/Narrator12.mp3"
-    S "The Andromeda galaxy. Our nearest galactical neighbor."
+    St "The Andromeda galaxy. Our nearest galactical neighbor."
     stop sound
 
     
@@ -497,7 +498,7 @@ label quiz2_q2:
     stop sound
     
     play sound "audio/Question_VO/Question6.mp3"
-    S "Question: Does Edwin Hubble's study of the cosmos align with model-dependent realism or classical realism?"
+    Q "Question: Does Edwin Hubble's study of the cosmos align with model-dependent realism or classical realism?"
     stop sound
 
     scene 33 with dissolve
@@ -552,7 +553,7 @@ label topic_3:
     scene 14 with dissolve
 
     play sound "audio/narrator_VO/Narrator15.mp3"
-    "The Big Bang. That's something that everyone knows."
+    St "The Big Bang. That's something that everyone knows."
     stop sound
 
     play sound "audio/Sensei_VO/sensei_24.mp3"
@@ -603,7 +604,7 @@ label quiz2_q4:
     stop sound
 
     play sound "audio/narrator_VO/Narrator17.mp3"
-    "The early universe, the primordial soup, from which our universe came to be."
+    St "The early universe, the primordial soup, from which our universe came to be."
     stop sound
 
     play sound "audio/Sensei_VO/sensei_27.mp3"
@@ -651,8 +652,6 @@ label quiz2_q5:
     play sound "audio/Sensei_VO/sensei_28.mp3"
     S "It's called recombination. After neutral atoms were formed through recombination, the universe still continued to expand and cool. Stars and galaxies formed from the gravitational collapse of clouds of dust and gas. "
     stop sound
-
-    S "And then came our planets"
 
     play sound "audio/Sensei_VO/sensei_29.mp3"
     S "Where do you think did the later, life-supporting elements such as carbon, nitrogen, and oxygen originate from?"
@@ -720,7 +719,7 @@ label quiz2_q6:
 
     scene 22 with dissolve
     play sound "audio/narrator_VO/Narrator18.mp3"
-    "Did humans come from space?"
+    St "Did humans come from space?"
     stop sound
 
     # LOAD SENSEI SMILING
