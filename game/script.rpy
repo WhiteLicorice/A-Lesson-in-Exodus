@@ -2,14 +2,17 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+style outlined_text:
+    outlines [ (4, "#F8F8FF", absolute(0), absolute(0)) ]
+    ypos -4
 
-define S = Character("Sen Sei", color="#F8F8FF")
-define St = Character("Student", color="#F8F8FF")
-define N = Character("Narrator", color="#F8F8FF")
-define Q = Character("Question", color="#F8F8FF")
+define S = Character("{b}Sen Sei{/b}", color="#3232cf", style='outlined_text')
+define St = Character("{b}Student{/b}", color="#177c1c", style='outlined_text')
+define N = Character("{b}Narrator{/b}", color="#e91212", style='outlined_text')
+define Q = Character("{b}Question{/b}", color="#F8F8FF", style='outlined_text')
 
 init:
-    $ timer_range = 0
+    $ timer_range = 0   
     $ timer_jump = 0
 
     transform alpha_dissolve:
@@ -22,11 +25,13 @@ init:
     screen countdown:
         timer 0.01 repeat True action If(time > 0, true=SetVariable('time', time - 0.01), false=[Hide('countdown'), Jump(timer_jump)])
         bar value time range timer_range xalign 0.5 yalign 0.9 xmaximum 300 at alpha_dissolve # This is the timer bar.
+    
+  
 
 label start:
     stop sound
 
-    play music "<from 35 to 353>audio/bg-music.mp3" loop fadein 1.0 volume 0.1 
+    play music "<from 35 to 353>audio/bg-music.mp3" loop fadein 1.0 volume 0.3
     # queue " "
     # play sound "" # soundfx
     
@@ -359,7 +364,7 @@ label quiz1_q5:
 
     scene 3 with dissolve
     play sound "audio/narrator_VO/Narrator9.mp3"
-    "Counting the scores... Not too shabby."
+    S "Counting the scores... Not too shabby."
     stop sound
 
 label topic_2:
@@ -371,7 +376,7 @@ label topic_2:
     scene 10 with dissolve
 
     play sound "audio/narrator_VO/Narrator10.mp3"
-    N "Edwin Hubble. A 20th century American scientist who played a crucial role in establishing extragalactic astronomy and observational cosmology."
+    S "Edwin Hubble. A 20th century American scientist who played a crucial role in establishing extragalactic astronomy and observational cosmology."
     stop sound
 
     # LOAD SENSEI SMILING
@@ -562,7 +567,7 @@ label topic_3:
     stop sound
 
     play sound "audio/narrator_VO/Narrator16.mp3"
-    "So it didn't explode like a bomb."
+    S "So it didn't explode like a bomb."
     stop sound
 
     play sound "audio/Sensei_VO/sensei_25.mp3"

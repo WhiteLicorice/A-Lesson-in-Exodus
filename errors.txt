@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: expected end of line
-    play music "<from 35.0 to 353>audio/bg-music.mp3" loop = True fadein 1.0 volume 0.4 
-                                                           ^
+File "game/script.rpy", line 5: Unexpected indentation at start of file.
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Apr 27 12:01:05 2024
+Mon Apr 29 13:22:57 2024
