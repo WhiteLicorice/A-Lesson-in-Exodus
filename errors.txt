@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 5: Unexpected indentation at start of file.
+File "game/script.rpy", line 373: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+        Let's move on to the story of a very interesting man and how he determined that the universe is expanding.
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Apr 29 13:22:57 2024
+Tue Apr 30 08:57:11 2024
