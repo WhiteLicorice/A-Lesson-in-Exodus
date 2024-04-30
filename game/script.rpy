@@ -9,7 +9,7 @@ style outlined_text:
 define S = Character("{b}Sen Sei{/b}", color="#3232cf", style='outlined_text')
 define St = Character("{b}Student{/b}", color="#177c1c", style='outlined_text')
 define N = Character("{b}Narrator{/b}", color="#e91212", style='outlined_text')
-define Q = Character("{b}Question{/b}", color="#F8F8FF", style='outlined_text')
+define Q = Character("{b}Question{/b}", color="#080809", style='outlined_text')
 
 init:
     $ timer_range = 0   
@@ -368,8 +368,11 @@ label quiz1_q5:
     stop sound
 
 label topic_2:
-    play sound "audio/Sensei_VO/sensei_15.mp3"
-    S "I see that some of you aren't paying attention. From this point forward, hold on to your paper. I will be asking questions that will be answered as a group, timed, and graded accordingly. Let's move on to the story of a very interesting man and how he determined that the universe is expanding."
+    play sound "<from 0 to 14>audio/Sensei_VO/sensei_15.mp3"
+    S "I see that some of you aren't paying attention. From this point forward, hold on to your paper. I will be asking questions that will be answered as a group, timed, and graded accordingly."
+    stop sound
+    play sound "<from 14.5 to 23.5>audio/Sensei_VO/sensei_15.mp3"
+    S "Let's move on to the story of a very interesting man and how he determined that the universe is expanding."
     stop sound
 
     # LOAD EDWIN HUBBLE
