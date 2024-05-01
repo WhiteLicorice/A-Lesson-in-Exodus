@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 373: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-        Let's move on to the story of a very interesting man and how he determined that the universe is expanding.
+File "game/script.rpy", line 573: expected statement.
+    St
+      ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Apr 30 08:57:11 2024
+Wed May  1 19:09:13 2024
