@@ -31,7 +31,7 @@ init:
 label start:
     stop sound
 
-    play music "<from 35 to 353>audio/bg-music.mp3" loop fadein 1.0 volume 0.3
+    play music "<from 35 to 84>audio/bg-music.mp3" loop fadein 1.0 volume 0.3
     # queue " "
     # play sound "" # soundfx
     
@@ -364,7 +364,7 @@ label quiz1_q5:
 
     scene 3 with dissolve
     play sound "audio/narrator_VO/Narrator9.mp3"
-    S "Counting the scores... Not too shabby."
+    St "Counting the scores... Not too shabby."
     stop sound
 
 label topic_2:
@@ -570,7 +570,7 @@ label topic_3:
     stop sound
 
     play sound "audio/narrator_VO/Narrator16.mp3"
-    S "So it didn't explode like a bomb."
+    St "So it didn't explode like a bomb."
     stop sound
 
     play sound "audio/Sensei_VO/sensei_25.mp3"
